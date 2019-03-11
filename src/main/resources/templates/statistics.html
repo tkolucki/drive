@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <thead>
+    <tr>
+        <th>NAME</th>
+        <th>NUMBERS OF VOTES</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="candidate: ${candidates}">
+        <td th:text="${candidate.name}">candidate name</td>
+        <td th:text="${candidate.numberOfVotes}">0</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
